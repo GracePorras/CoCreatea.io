@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== primary meta tags ===============-->
+  <title>Welcome to CoCreatea</title>
+  <meta name="title" content="CoCreatea">
+  <meta name="description" content="A Web Based Diagramming application that brings teams together to make better decisions">
+
+  <!--=============== FAVICON ===============-->
+
+  <link rel="shortcut icon" href="./assets/images/CoCreatea_1.png" type="image/svg+xml">
+
+  <!--=============== google font link ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--=============== custom css link ===============-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+<body>
+
+  <!--=============== #HEADER ===============-->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/CoCreatea_1.png" width="74" height="24" alt="Cocreatea home" class="logo-light">
+
+        <img src="./assets/images/CoCreatea_1.png" width="74" height="24" alt="Cocreatea home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/CoCreatea_2.png" width="74" height="24" alt="CoCreatea home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#uml" class="navbar-link">UML</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:Cocreatea0@gmail.com" class="contact-link">Cocreatea0@gmail.com</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="./LOGIN-FORM/index.html" class="btn btn-primary">Login</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!--=============== #HERO ===============-->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background: linear-gradient(to right,#58BBF2, #5865F2)">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Where Ideas Connect and Grow</h1>
+
+            <p class="hero-text">CoCreatea is a web based diagramming application that brings teams together to make better decisions</p>
+
+            <div class="btn-wrapper">
+
+              <a href="./LOGIN-FORM/index.html" class="btn btn-primary">Get Started</a>
+
+              <a href="#contact" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/communicating.JPG" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/Webinar-bro.png" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/Collab-pana.png" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--=============== #ABOUT ===============-->
+
+      <section class="about" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/Collab-rafiki.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label"><br>About CoCretea</p>
+
+            <h2 class="h2 section-title">
+              Collaborate, Create, and Achieve.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">What is CoCreatea</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, sunt. Totam reprehenderit quisquam itaque nulla explicabo molestias laboriosam minus repudiandae.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Benefits</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi error cupiditate quam voluptatibus ex possimus necessitatibus distinctio libero ipsam dolores.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Hardware Requirements</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minus deleniti commodi excepturi incidunt mollitia nulla consequatur ea perferendis et.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--=============== #SERVICE ===============-->
+
+      <section class="section service" aria-labelledby="service-label" id="services" style="background: linear-gradient(to right,#a6dffe, #f7f8ff)">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Features</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Whiteboard for Diagrams</h3>
+
+                <p class="card-text">
+                  We also have built-in Templates of UML
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Virtual Rooms and Meets</h3>
+
+                <p class="card-text">
+                  We also have built-in Templates of UML.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Collaborate with Multiple Users</h3>
+
+                <p class="card-text">
+                  Collab and have a real-time cooperation with others
+                </p>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!--=============== #UML ===============-->
+
+      <section class="section uml" aria-labelledby="UML-label" id="uml">
+        <div class="container">
+
+          <figure class="uml-banner">
+            <img src="./assets/images/Business Plan-rafiki.png" width="800" height="531" loading="lazy" alt="uml banner"
+              class="w-100">
+          </figure>
+
+          <div class="uml-content">
+
+            <p class="section-subtitle" id="feautre-label">UML Diagrams</p>
+
+            <h2 class="h2 section-title">
+              Learn about UML.
+            </h2>
+
+            <p class="section-text">
+              UML stands for Unified Modeling Language. It’s a rich language to model software solutions, application structures, system behavior and business processes. There are 14 UML diagram types to help you model these behaviors.
+            </p>
+
+            <a href="#" class="btn btn-primary" style="background-color: #58BBF2; color: white;">Learn more</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--=============== #QUOTE ===============-->
+
+      <section class="quote" aria-label="our quote">
+        <div class="container">
+
+          <ul class="quote-card has-bg-color" style="background: linear-gradient(to right,#58BBF2, #5865F2)">
+
+            <li>
+              <p class="card-text">
+                <span class="h2">"Great discoveries and improvement invariably involve the cooperation of many minds"
+                  </span>
+
+                <span class="h3">- Alexander Graham Bell</span>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--=============== #BLOG ===============-->
+
+      <section class="section blog" aria-labelledby="blog-label" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle" id="blog-label">Blog Posts</p>
+
+          <h2 class="h2 section-title">
+            Learn about creating diagrams.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/Webinar-pana.png" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="blog1.html#blog1" class="card-title">What makes a diagram a good diagram</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">28 July 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Diagram</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/Creative team-pana.png" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./blog1.html#blog2" class="card-title">Tips for Effective UML Diagrams</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">28 July 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Diagram</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/Group video-amico.png" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="./blog1.html#blog3" class="card-title">Faciliating effective online collaboration</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">27 July 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--=============== #CTA ===============-->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Connect with us.
+          </h2>
+
+          <a href="mailto:Cocreatea0@gmail.com" class="btn btn-primary" target="_blank">Tell us your thoughts</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--=============== #FOOTER ===============-->
+
+  <footer class="footer" id="contact">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/CoCreatea_2.png" width="74" height="24" alt="CoCreatea home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2024 CoCreatea. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Manila, Philippines
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:Cocreatea0@gmail.com" class="footer-link">Cocreatea0@email.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="story.html" class="footer-link">Our Story</a>
+        </li>
+
+        <li>
+          <a href="term.html" class="footer-link">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="policy.html#" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+  <!--=============== custom js link ===============-->
+  <script src="./assets/js/script.js"></script>
+
+  <!--=============== ionicon ===============-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

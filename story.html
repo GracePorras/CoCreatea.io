@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== primary meta tags ===============-->
+  <title>Welcome to CoCreatea</title>
+  <meta name="title" content="CoCreatea">
+  <meta name="description" content="A Web Based Diagramming application that brings teams together to make better decisions">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./assets/images/CoCreatea_1.png" type="image/svg+xml">
+
+  <!--=============== Bootstrap CSS ===============-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--=============== google font link ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--=============== custom css link ===============-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!--=============== #HEADER ===============-->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/CoCreatea_1.png" width="74" height="24" alt="Cocreatea home" class="logo-light">
+        <img src="./assets/images/CoCreatea_1.png" width="74" height="24" alt="Cocreatea home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/CoCreatea_2.png" width="74" height="24" alt="CoCreatea home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="index.html#about" class="navbar-link">About</a></li>
+          <li><a href="index.html#services" class="navbar-link">Services</a></li>
+          <li><a href="index.html#uml" class="navbar-link">UML</a></li>
+          <li><a href="./blog1.html" class="navbar-link">Blog</a></li>
+          <li><a href="#contact" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:Cocreatea0@gmail.com" class="contact-link">Cocreatea0@gmail.com</a>
+        </div>
+
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </nav>
+
+      <a href="./LOGIN-FORM/index.html" class="btn btn-primary">Login</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!--=============== #HERO ===============-->
+      <section class="section hero has-bg-image" aria-label="home" style="background: linear-gradient(to right,#58BBF2, #5865F2)">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Where Ideas Connect and Grow</h1>
+            <p class="hero-text">CoCreatea is a web based diagramming application that brings teams together to make better decisions</p>
+            <div class="btn-wrapper">
+              <a href="./LOGIN-FORM/index.html" class="btn btn-primary">Get Started</a>
+              <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="hero-slider" data-slider>
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/communicating.JPG" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+                </li>
+                <li class="slider-item">
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/Webinar-bro.png" width="575" height="550" alt="hero banner" class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/Collab-pana.png" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== #OUR STORY ===============-->
+      <section class="section our-story py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h1 class="h1 section-title">Our Story</h1>
+              <img src="./assets/images/CoCreatea_2.png" class="img-fluid my-4" alt="Our Story Image">
+              <p class="section-text">
+                At CoCreatea, we believe that collaboration and innovation are the keys to success. Our journey began with a vision to revolutionize the way teams work together on complex projects. From our humble beginnings, we've grown into a leading web-based diagramming tool that empowers teams to visualize their ideas and make informed decisions.
+              </p>
+              <p class="section-text">
+                Our team is passionate about providing a platform that enhances productivity and fosters creativity. We've continually evolved our features to meet the changing needs of our users, ensuring that CoCreatea remains at the forefront of diagramming technology.
+              </p>
+              <p class="section-text">
+                Join us as we continue to innovate and push the boundaries of what's possible in the world of collaborative diagramming. Together, we can achieve more and turn our ideas into reality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!--=============== #FOOTER ===============-->
+  <footer class="footer" id="contact">
+    <div class="container grid-list">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="./assets/images/CoCreatea_2.png" width="74" height="24" alt="CoCreatea home">
+        </a>
+        <p class="footer-text">
+          &copy; 2024 CoCreatea. <br> All rights reserved.
+        </p>
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </div>
+
+      <ul class="footer-list">
+        <li><p class="h4 footer-list-title">Get in Touch</p></li>
+        <li><address class="footer-text">Manila, Philippines</address></li>
+        <li><a href="mailto:Cocreatea0@gmail.com" class="footer-link">Cocreatea0@email.com</a></li>
+      </ul>
+
+      <ul class="footer-list">
+        <li><p class="h4 footer-list-title">Learn More</p></li>
+        <li><a href="#" class="footer-link">About Us</a></li>
+        <li><a href="./story.html" class="footer-link">Our Story</a></li>
+        <li><a href="#" class="footer-link">Projects</a></li>
+        <li><a href="./index.html#contact" class="footer-link">Contact Us</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <!--=============== ionicon link ===============-->
+  <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--=============== custom js link ===============-->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

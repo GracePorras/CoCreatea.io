@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Register | CoCreatea</title>
+  <link rel="icon" href="./Images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Back button styles */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      z-index: 1000; /* Ensures the button is on top of other elements */
+    }
+
+    .back-button .circle {
+      width: 40px;
+      height: 40px;
+      background-color: #f0f0f0; /* Background color of the circle */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-button .arrow {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-left: 2px solid #333; /* Color of the arrow */
+      border-bottom: 2px solid #333; /* Color of the arrow */
+      transform: rotate(45deg);
+      margin-left: 4px;
+    }
+
+    .back-button .arrow.left {
+      transform: rotate(-135deg);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="../index.html" class="back-button">
+      <div class="circle">
+        <span class="arrow right"></span>
+      </div>
+    </a>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form action="index.html" autocomplete="off" class="sign-in-form">
+            <div class="heading">
+              <h2>Welcome back!</h2>
+              <h6>Don't have an account?</h6>
+              <a href="#" class="toggle" onclick="slideToImage(1)">Register</a>
+            </div>
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Name</label>
+              </div>
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Password</label>
+              </div>
+              <input type="submit" value="Continue" class="sign-btn" />
+              <div class="or_section">
+                <span class="or_text">-- or --</span>
+                <button class="google_button" href="#">
+                  <img src="./Images/google.png" alt="Google Logo" class="google_logo"> Continue with Google
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <form action="index.html" autocomplete="off" class="sign-up-form">
+            <div class="heading">
+              <h2>Get Started Today!</h2>
+              <h6>Already have an account?</h6>
+              <a href="#" class="toggle" onclick="slideToImage(0)">Sign in</a>
+            </div>
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Name</label>
+              </div>
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Email</label>
+              </div>
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Password</label>
+              </div>
+
+              <input type="submit" value="Create your account" class="sign-btn" />
+
+              <!-- Popup for Terms and Conditions -->
+              <div class="popup" id="termsPopup">
+                <div class="popup-content">
+                  <span class="close-popup" onclick="closePopup()">&times;</span>
+                  <h2>Terms and Conditions</h2>
+                  <ul>
+                    <li class="bold">Agreement of Terms:
+                      <ul>
+                        <li>Users agree to CoCreatea's terms and conditions.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Service Description:
+                      <ul>
+                        <li>Offers tools for UML diagram creation, editing, and collaboration.</li>
+                        <li>Features include real-time collaboration, version control, templates, export and import, integration, and comments.
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="bold">Eligibility:
+                      <ul>
+                        <li>Users must be at least 13 years old.</li>
+                        <li>User accounts may be required for certain features.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">User Conduct:
+                      <ul>
+                        <li>Users agree not to use the Service for illegal or unauthorized purposes.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Intellectual Property:
+                      <ul>
+                        <li>All content and materials on CoCreatea are CoCreatea's or its licensors' property.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Privacy:
+                      <ul>
+                        <li> Use of CoCreatea is subject to the Privacy Policy.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Termination:
+                      <ul>
+                        <li>CoCreatea reserves the right to terminate or suspend accounts without prior notice.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Warranties:
+                      <ul>
+                        <li>The Service is provided on an "as is" and "as available" basis.</li>
+                      </ul>
+                    </li>
+                    <li class="bold">Limitation of Liability:
+                      <ul>
+                        <li> CoCreatea is not liable for indirect, incidental, special, consequential, or punitive damages.
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="bold">Indemnification:
+                      <ul>
+                        <li>Users agree to indemnify CoCreatea, its affiliates, and their officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tacbox">
+                <input type="checkbox" required />
+                I agree to these <a href="#" onclick="openPopup()">Terms and Conditions</a>.
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./Images/Front.png" class="image img-1 show" alt="" />
+            <img src="./Images/Back.png" class="image img-2" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
