@@ -1,3 +1,3 @@
 # CoCreatea.github.io
 demo:
-https://graceporras.github.io/CoCreatea.io/#contact
+https://graceporras.github.io/CoCreatea.io/
